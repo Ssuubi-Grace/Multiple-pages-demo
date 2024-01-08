@@ -1,6 +1,7 @@
-.p1{
-    color: blue;
+body {
+    background: #f8e8a6;
 }
-.p2{
-    color: rgb(5, 243, 61);
-}
+h1,p,footer{text-align: center;}
+footer {
+        display: block;
+      }
