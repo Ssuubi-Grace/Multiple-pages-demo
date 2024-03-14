@@ -29,10 +29,10 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-*">
       <div class="container">
-        <a class="navbar-brand" href="/" title="Homepage"
-          >About me - Ssuubi Grace</a
+        <a class="navbar-brand" id="My-brand" href="/" title="Homepage"
+          >Ssuubi Grace</a
         >
         <button
           class="navbar-toggler"
@@ -45,55 +45,69 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/"
-                title="Homepage"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html" title="About Ssuubi Grace"
-                >About me</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/about.html#contact"
-                title="Contact Ssuubi Grace"
-                >Contact me</a
-              >
-            </li>
-          </ul>
+
+        <!---Added-->
+        <div class="menus">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/"
+                  title="Homepage"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/about.html"
+                  title="About Ssuubi Grace"
+                  >About me</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/projects.html"
+                  title="Projects Ssuubi Grace"
+                  >My Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/contact.html"
+                  title="Contact Ssuubi Grace"
+                  >Contact me</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <!----End added-->
       </div>
     </nav>
     <div class="top">
-      <h2 class="text-center">👩‍💻Welcome to My Portfolio</h2>
-
+      <h2 class="text-center welcome">👩‍💻Welcome to My Portfolio</h2>
       <h2 class="text-center">👋 Hi Iam</h2>
       <h1 class="text-center">Ssuubi Grace</h1>
       <h3 class="text-center">
-        Front-end software developer, based in Bhubaneswar passionate about
-        creating user-friendly and innovative solutions.
+        Front-end software developer, based in Bhubaneswar.
       </h3>
     </div>
     <div class="navigation-links mb-5">
-      <a
-        href="/about.html#contact"
-        class="primary-link"
-        title="Contact Ssuubi Grace"
+      <a href="/contact.html" class="primary-link" title="Contact Ssuubi Grace"
         >Contact me</a
       >
       <a href="/about.html" class="secondary-link" title="About Ssuubi Grace"
         >About me</a
       >
     </div>
+
+    <!----
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
@@ -173,10 +187,41 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>    ---->
 
+    <!------
     <footer>
       <i class="fa-brands fa-linkedin"></i>
+    </footer>-->
+
+    <footer>
+      <section id="social-media">
+        <h2 class="footer_head">Connect with Me</h2>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/ssuubi.grace/" target="_blank"
+              ><img src="images/FB.png" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/muwonge_grace" target="_blank"
+              ><img src="/images/Twitter.png" alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ssuubi-grace-165381274/"
+              target="_blank"
+              ><img src="images/ln.png" alt="LinkedIn"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <button class="back-to-top" onclick="scrollToTop()">&#8593;</button>
+      <hr class="full-width-hr" />
+      <p class="copyright">&copy; Ssuubi Grace. All rights reserved.</p>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>

@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/src/style.css" />
+
     <title>About me - Ssuubi Grace</title>
     <meta
       name="description"
@@ -55,7 +56,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   href="/about.html"
                   title="About Ssuubi Grace"
                   >About me</a
@@ -73,7 +74,7 @@
 
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link active"
                   href="/contact.html"
                   title="Contact Ssuubi Grace"
                   >Contact me</a
@@ -85,98 +86,66 @@
         <!----End added-->
       </div>
     </nav>
+    <!-------GOT FROM MY PORT--->
 
-    <!--<div class="about-section container">
-      <div class="row">
-        <div class="col-6">
-          <h1>
-            👋 Hi <br />
-            Iam Ssuubi Grace
-          </h1>
-          <h2 class="">Front-end developer based in Bhubaneswar, India</h2>
+    <h1 class="text-center contact">📮 Contact Me</h1>
 
-          <p>
-            I have practical experience in developing web applications. I am
-            proficient in languages such as C,C++,Java, PHP, HTML, CSS,
-            JavaScript, and Python. <br />Passionate about creating
-            user-friendly and innovative solutions.
-          </p>
+    <section id="contacts" class="container">
+      <!--<h2 class="mt-5">📮 Contact Me</h2>--->
+      <p class="mt-4">
+        You can reach out to me via email at
+        <a href="mailto:hopeliz835@gmail.com" class="mail"
+          >hopeliz835@gmail.com</a
+        >
+        or through the contact form below.
+      </p>
+      <div class="form-wrap">
+        <form
+          id="contactForm"
+          method="post"
+          action="./back-office/treatments/contact-form.php"
+        >
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Your Name"
+            class="form-input mb-3"
+          />
+          <br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="form-input mb-3"
+          /><br />
 
-          <a
-            class="nav-link"
-            href="/projects.html"
-            title="Projects Ssuubi Grace"
-            >View my Work</a
-          >
-        </div>
+          <input
+            type="text"
+            name="phone"
+            placeholder="phone"
+            class="form-input mb-3"
+          />
+          <br />
+          <input
+            type="text"
+            name="subject"
+            placeholder="subject"
+            class="form-input mb-3"
+          />
+          <br />
 
-        <div class="col-6 Grace">
-          <img src="/images/love.jpg" alt="Ssuubi" class="img-fluid" />
-        </div>
+          <textarea
+            rows="10"
+            name="message"
+            placeholder="Your Message"
+            class="form-input mb-3"
+          ></textarea
+          ><br />
+          <button type="submit" class="form-button">Send Message</button>
+        </form>
       </div>
-    </div>
-  -->
-    <h1 class="text-center about">About me</h1>
-    <h3 class="text-center">Front-end developer from Bhubaneswar, India</h3>
+    </section>
 
-    <!---------
-    <div class="about-section container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="about-section-content">
-            ===----<h1 class="mb-4">Hi Iam Ssuubi Grace</h1>
-            <h2 class="mb-4">Frontend Developer, based in India.</h2>======
-            <p class="mb-5">
-              I have practical experience in developing web applications. I am
-              proficient in languages such as C,C++,Java, PHP, HTML, CSS,
-              JavaScript, and Python. <br />Passionate about creating
-              user-friendly and innovative solutions.
-            </p>
-            <a
-              class="nav-link"
-              href="/projects.html"
-              title="Projects Ssuubi Grace"
-              >View my Work</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <img src="images/love.jpg" alt="" class="img-fluid shadow rounded" />
-        </div>
-      </div>
-    </div>  --->
-
-    <div class="container" id="projects">
-      <div class="row mt-5 mb-5 mine">
-        <div class="col-sm-6 partitions my-message">
-          <!--<h2 class="mb-3"></h2>--->
-          <p class="about_grace">
-            I have practical experience in developing web applications.
-            <br /><br />I am proficient in languages such as C,C++,Java, PHP,
-            HTML, CSS, JavaScript, and Python. <br />
-            <br />Passionate about creating user-friendly and innovative
-            solutions.
-          </p>
-          <div class="mt-5">
-            <a
-              href="projects.html"
-              class="primary-link project-link mb-5"
-              title="Projects Ssuubi"
-              >Veiw my work</a
-            >
-          </div>
-        </div>
-        <div class="col-sm-6 partitions">
-          <div class="imagecontainer-Hope">
-            <img
-              src="/images/love.jpg"
-              alt="Weather project"
-              class="img-fluid rounded d-none d-sm-block shadow-lg p-3 mb-5 bg-body rounded"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
     <footer>
       <section id="social-media">
         <h2 class="footer_head">Connect with Me</h2>

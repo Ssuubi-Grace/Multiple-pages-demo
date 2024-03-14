@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color:#0044FF;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -8,23 +8,35 @@ body {
   margin-top: 100px 0;
 }
 
-h1,
-h2,
-h3 {
+      
+   #My-brand{
+            
+  color: var(--primary-color);
+  }  
+  
+
+text-center {
   margin: 0;
 }
 
-h1 {
+.menus{
+  display: flex;
+  align-items: right;
+}
+.top h1 {
   font-size: 96px;
   line-height: 1;
 }
 
+.welcome{
+  color:var(--primary-color) ;
+}
 
-h2 {
+.top h2 {
   font-size: 48px;
 }
 
-h3 {
+.top h3 {
   font-size: 24px;
   opacity: 0.7;
 }
@@ -75,12 +87,67 @@ p {
   display: block;
 }
 
+
+.about-section {
+  padding: 160px 20px;
+  display: flex; /* Make the container a flexbox */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically (optional) */
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
+.about-section img ,p{
+  max-width: 600px; 
+  max-height: 500px;
+}
+
+.about-section .nav-link{
+  
+  display: inline-block; /* Make it behave like a button */
+  padding: 10px 20px; /* Adjust padding for desired size */
+  border: 2px solid var(--primary-color); /* Blue border color */
+      
+
+  border-radius: 4px; /* Rounded corners */
+  background-color: transparent; /* Remove default background */
+  color: var(--primary-color); /* Blue text color */
+  text-decoration: none; /* Remove underline */
+  text-transform: capitalize; /* Capitalize first letter */
+  transition: all 0.2s ease-in-out; /* Add smooth hover effect (optional) */
+}
+
+.nav-link:hover {
+  background-color: var(--primary-color); /* Change background color on hover (optional) */
+  color: white; /* Change text color on hover (optional) */
+}
+
+
+
 .about-paragraphs {
   margin: 30px 0;
 }
 
 .about-paragraphs p {
   margin: 10px;
+}
+
+
+
+.nav-link{
+
 }
 
 .email-link{
@@ -94,6 +161,245 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
+
+
+/*ABOUT*/
+.mine{
+  display: flex;
+  align-items: center;
+
+}
+.my-message{
+
+}
+.imagecontainer-Hope{
+  /*width: 50%;
+  height: auto;*/
+  /*display: flex;
+  align-items: center;*/
+  width: 70%; 
+  height: auto;
+}
+.imagecontainer-Hope img{
+object-fit: contain;
+}
+
+@media(max-width:576px){
+
+ body .imagecontainer-Hope { /* More specific selector */
+    width: 100%;
+    height: auto;
+  }
+
+.imagecontainer-Hope img{
+object-fit: contain;
+}
+}
+
+.about_grace{
+  /*max-width: 10%;*/
+  
+}
+
+/*WORK SECTION*/
+.about ,.work,.contact{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+.projects{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.work-image{
+  height: ;
+}
+/*
+.project-description{
+  max-width: 10px;
+  background-color: blue;
+}*/
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.partitions{
+    background-color: ;
+
+}
+.partitions p{
+  max-width: 80%;
+ }
+
+ 
+.imagecontainer{
+width: 80%;  
+  height: 80%;
+}
+.imagecontainer img{
+object-fit: contain;
+}
+
+/*Styling the form*/
+#contacts{
+ background-color:;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*
+
+.form-wrap{
+
+}
+
+.form-input {
+    width: 400px;
+    
+} 
+
+
+.form-button{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+*/
+
+#contact{
+        padding:0 50px;
+        max-width: 800px;
+      }
+      .mail{
+        text-decoration: none;
+      }
+      .mail:hover{
+        text-decoration: underline;
+      }
+      .form-wrap{
+        margin-bottom: 50px;
+      }
+      .form-input,
+      .form-textarea {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      .form-input:focus,
+      .form-textarea:focus {
+        outline: none;
+        border-color: #aaa;
+      }
+
+      .form-button {
+        display: block;
+        margin: 0 auto;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: none;
+        border-radius: 50px;
+        padding: 15px 20px;
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        font-size: 16px;
+      }
+
+      .form-button:hover {
+        opacity: 0.7;
+      }
+
+
+
+
+      /* footer*/
+      footer {
+        background-color:#333;;
+        padding: 20px;
+        text-align: center;
+      }
+   
+      .footer_head {
+        color: #ffffff;
+      }
+
+      .social-icons {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons li {
+        margin-right: 10px;
+      }
+
+      .social-icons li:last-child {
+        margin-right: 0;
+      }
+
+      .social-icons a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f8f7f7;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .social-icons a img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      .back-to-top{
+        background: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 8px;
+      }
+       .full-width-hr {
+      width: 100%;
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+      margin: 5px 0;
+      padding: 0;
+  }
+      .copyright {
+        margin-top: 20px;
+        margin-bottom: 0;
+        color: #ffffff;
+      }
+
+
+
+
+
+
+
+
 
 @media(max-width:576px){
     h1{
