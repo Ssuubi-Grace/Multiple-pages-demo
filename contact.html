@@ -102,9 +102,15 @@
       <div class="form-wrap">
         <form
           id="contactForm"
-          method="post"
-          action="./back-office/treatments/contact-form.php"
+          action="https://api.web3forms.com/submit"
+          method="POST"
         >
+          <input
+            type="hidden"
+            name="access_key"
+            value="67bf53ee-25cb-45b9-a2ea-efa2be15152b"
+          />
+
           <input
             type="text"
             name="fullname"
